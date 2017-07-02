@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">RoboControl</string>
+    <string name="bluetooth_connect">Bluetooth connect</string>
+    <string name="bluetooth_connecting">Connecting…</string>
+    <string name="bluetooth_disconnect">Disconnect</string>
+    <string name="shoulder">Shoulder</string>
+    <string name="elbow">Elbow</string>
+    <string name="wrist_up_down">Wrist</string>
+    <string name="gripper">Gripper</string>
+    <string name="base">Base 360</string>
+    <string name="wrist">Wrist 360</string>
+    <string name="connection">Connection</string>
+    <string name="control">Control</string>
+    <string name="motions">Motions</string>
+    <string name="start_position">Start position</string>
+    <string name="motion_1">Motion 1</string>
+    <string name="motion_2">Motion 2</string>
+    <string name="motion_3">Motion 3</string>
+    <string name="motion_4">Motion 4</string>
+    <string name="motion_5">Motion 5</string>
+    <string name="execute">Execute</string>
+    <string name="stop">Stop</string>
+    <string name="no_bluetooth">Your device does not have a Bluetooth adapter.</string>
+    <string name="connection_error_pairing_none">There are no paired Bluetooth devices</string>
+    <string name="connection_error_pairing">Robo has not been paired with this device</string>
+    <string name="connection_error">Cannot connect to Robo</string>
+    <string name="connection_successful">Connection successful</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="about">About</string>
+    <string name="about_text">Created by Pethő Zsombor</string>
+
+</resources>

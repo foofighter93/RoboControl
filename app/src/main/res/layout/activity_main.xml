@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_normal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_normal_margin"
+                android:text="@string/control"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/seekbar_start"
+                    android:layout_height="wrap_content"
+                    android:text="@string/base"
+                    android:textSize="@dimen/text_label" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/seekbar_start"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shoulder"
+                    android:textSize="@dimen/text_label" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_shoulder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/seekbar_start"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elbow"
+                    android:textSize="@dimen/text_label" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_elbow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/seekbar_start"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wrist_up_down"
+                    android:textSize="@dimen/text_label" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_wrist_up_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/seekbar_start"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wrist"
+                    android:textSize="@dimen/text_label" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_wrist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/seekbar_start"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gripper"
+                    android:textSize="@dimen/text_label" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_gripper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:text="@string/start_position" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/activity_small_margin"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_normal_margin"
+                android:text="@string/motions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/motions_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/motion_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/motion_1" />
+
+                    <RadioButton
+                        android:id="@+id/motion_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/motion_2" />
+
+                    <RadioButton
+                        android:id="@+id/motion_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/motion_3" />
+
+                    <RadioButton
+                        android:id="@+id/motion_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/motion_4" />
+
+                    <RadioButton
+                        android:id="@+id/motion_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/motion_5" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/execute_button_margin"
+                    android:layout_marginStart="@dimen/execute_button_margin"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button_execute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/activity_small_margin"
+                        android:text="@string/execute" />
+
+                    <Button
+                        android:id="@+id/button_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/activity_small_margin"
+                        android:text="@string/stop" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/activity_normal_margin"
+        android:src="@drawable/ic_bluetooth_enable_24dp"
+        app:layout_anchorGravity="bottom|right|end" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
